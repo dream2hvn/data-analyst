@@ -14,6 +14,8 @@ import seaborn as sns
 
 csv_url = "https://raw.githubusercontent.com/dream2hvn/data-analyst/refs/heads/main/dashboard/main_data.csv"
 
+data = pd.read_csv('https://raw.githubusercontent.com/dream2hvn/data-analyst/refs/heads/main/dashboard/main_data.csv')
+
 data['order_purchase_timestamp'] = pd.to_datetime(data['order_purchase_timestamp'])
 data['order_delivered_customer_date'] = pd.to_datetime(data['order_delivered_customer_date'])
 
