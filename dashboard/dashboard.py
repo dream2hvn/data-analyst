@@ -12,9 +12,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from google.colab import drive
-drive.mount('/content/drive')
-
 data = pd.read_csv('/content/drive/MyDrive/NT/main_data.csv')
 
 data['order_purchase_timestamp'] = pd.to_datetime(data['order_purchase_timestamp'])
